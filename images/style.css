@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+body, td, th {
+    font: 12px/1.62 Helvetica,Arial,sans-serif;
+}
+body,h1,h2,h3,h4,div,p,ul,li,ol,em{ margin:0; padding:0;}
+li{ list-style:none}
+a:link {
+    color: #3377AA;
+    text-decoration: none;
+}
+a:visited {
+    color: #666699;
+    text-decoration: none;
+}
+a:hover {
+    background: none repeat scroll 0 0 #3377AA;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:active {
+    background: none repeat scroll 0 0 #FF9933;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.fl{ float:left;}
+.fr{ float:right;}
+.clear {
+    display: block;
+	min-height: 1%;
+}
+.clear:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.mt15{ margin-top:15px;}
+.wrap{ width:1000px; margin:0 auto;}
+
+#header{ height:50px; line-height:50px; overflow:hidden; margin-bottom:20px;}
+.nav{ width:300px; margin-left:100px;}
+.nav li{ float:left; margin-right:20px;}
+
+.main{ width:650px;}
+	.main .top-fav{ height:30px; line-height:30px; overflow:hidden; border-bottom:1px solid #ccc; margin-bottom:15px;}
+	.main .top-fav h1{ font-size:18px;}
+	.main .top-fav ul{ width:200px; line-height:18px; margin-top:6px;} 
+	.main .top-fav li{ float:left; margin-left:20px;}
+	.main .top-fav li.cur{ background-color:#03F; color:#FFF;}
+.list-container{}
+	.story-item{border-bottom: 1px solid #CCDCEF; padding: 10px 80px 10px 68px; position: relative;}
+	.fav-content{ float:left; width:100%;}
+	.fav-content h3{ padding-bottom:4px;}
+	.story-item-meta li{ float:left;}
+	.fav-tooltip{ float:left; margin-left:-64px; background: url("story_items.png") no-repeat scroll -51px -26px transparent; cursor: pointer;   height: 68px; position: relative; text-align: center; width: 54px;}
+	.fav-tooltip a.fav-count{color: #716B14; display: block; font-size: 18px; font-weight: bold; height: 18px; overflow:hidden; padding: 12px 0 9px;}
+	a.external-link{}
+	.fav-tooltip a.fav-btn{ display:block; height:24px; width:46px; margin:0 auto; background:url(story_items.png) no-repeat right -26px;}
+	.thumb{ margin-right:-80px; float:right; width:70px;}
+	.story-item-meta{ font-size:12px; color:#999;}
+	.story-item-meta li{ margin-right:15px;}
+	.story-item-description{ color:#666; padding-bottom:5px;}
+	a.story-item-source,.story-item-meta li a{color: #5F88CE;}
+	a.story-item-source:hover,.story-item-meta li a:hover{ color:#333; text-decoration:none;}
+	.story-item-meta li span{ background:url(story_items.png) no-repeat 0 -3px; height: 11px; margin-right: 3px; vertical-align: -2px; width: 10px; display:inline-block;}
+	.story-item-meta li.story-item-views span{background-position: -54px -3px; height: 10px; margin-right: 5px; vertical-align: -1px; width: 15px;}
+	.story-item-meta li.story-item-operate span{background-position: -11px -3px; height: 10px; margin-right: 5px; vertical-align: -1px; width: 11px;}
+.side{ width:300px;}
+	.sidebar-section{ margin-top:20px;}
+	.sidebar-section .group {
+		border-bottom: 1px dashed #DDDDDD;
+		clear: both;
+		margin-bottom: 20px;
+		padding-bottom: 5px;
+	}
+	.sidebar-section .group li {
+    float: left;
+    height: 22px;
+    margin-right: 1%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 32.3%;
+	}
+#footer {
+    border-top: 1px dashed #DDDDDD;
+    color: #999999;
+    padding-top: 6px;
+	margin-top:30px;
+}
+/* BLOG */
+.directory-intro{ padding:10px; background: -moz-linear-gradient(0% 0 270deg, #F9F9F9, #F1F1F1) repeat scroll 0 0 transparent; border: 1px solid #F0F0F0;border-radius: 2px 2px 2px 2px;}
+	.directory-intro .blog-link a{ color:#5F88CE;}
+	.directory-intro .blog-link a:hover{ color:#333;}
+	.blog-thumb img{ padding:8px; border:1px solid #ccc;}
+.social-type {
+    background: -moz-linear-gradient(0% 0 270deg, #F9F9F9, #F1F1F1) repeat scroll 0 0 transparent;
+    border: 1px solid #F0F0F0;
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    margin: 5px 5px 0 0;
+    padding: 17px 0 13px;
+    text-align: center;
+    text-decoration: none;
+    width: 93px;
+}
+.social-type:hover {
+    background: -moz-linear-gradient(0% 0 270deg, #F1F1F1, #F9F9F9) repeat scroll 0 0 transparent;
+	text-decoration:none;
+}
+.social-type p { color: #7A7A7A; font-size: 9px; margin: 0; padding: 0; text-shadow: 1px 1px 0 #FFFFFF; text-transform: uppercase;}
+.social-media p.logo{ background:url(sprite.png) no-repeat; display:inline-block; width:16px; height:16px; margin:0 auto 3px;}
+.social-media .google p.logo{ background-position: left -50px;}
+.social-media .rss p.logo{ background-position: left -100px;}
+.social-type p.number {
+    color: #3D3D3D;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+/* 用户中心 */
+.user-intro{ padding-left:80px; position:relative; margin-bottom:30px;}
+.myPic{ position:absolute; margin-left:-80px;}
+.user-fav .fr ul{ width:200px;}
+.user-fav .fr li{ float:left;}
+.user-tongji ul li{ float:left; width:90px; border-right:1px solid #ccc; margin-right:14px;}
+.user-tongji ul li a:hover{ text-decoration:none;}
+.user-tongji ul li b{ display:block; font-size:16px; color:#333;}
+.user-tongji ul li span{ color:#999;}
+
+/* 未开放登陆 */
+.start_page h1 {
+    color: #68AADB;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 300%;
+    margin: auto;
+    padding-top: 0;
+    width: 750px;
+}
+.start_page h2 {
+    color: #68879F;
+    font-size: 20px;
+    font-weight: normal;
+}
+.start_page form.login {
+    background-color: #F2F6F9;
+    border: 1px solid #CADBEA;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto 30px;
+    padding: 70px 140px;
+    width: 480px;
+}
+.start_page .register_title {
+    padding-top: 0;
+}
+.start_page label {
+    color: gray;
+}
+.start_page .nick_box, .start_page .email_box, .start_page .password_box {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CADBEA;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 20px;
+    height: 45px;
+    line-height: 45px;
+    padding: 5px 0 5px 20px;
+    width: 500px;
+}
+.start_page .nick_box input, .start_page .email_box input, .start_page .password_box input {
+    border: 0 none;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 360px;
+}
+.start_page .submit_box input {
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    height: 44px;
+    margin: auto;
+    width: 180px;
+}
+.start_page .login .submit_box input {
+    background: url("login_submit.gif") repeat scroll 0 0 transparent;
+    text-indent: -9999px;
+}
+
+.start_page .error {
+    color: red;
+    line-height: 45px;
+    padding-left: 8px;
+}
+
+/*  */
+.enter{ background: #EBF8F9; padding:5px 15px;}
