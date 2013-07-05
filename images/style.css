@@ -3,8 +3,11 @@
 body, td, th {
     font: 12px/1.62 Helvetica,Arial,sans-serif;
 }
-body,h1,h2,h3,h4,div,p,ul,li,ol,em{ margin:0; padding:0;}
+body,h1,h2,h3,h4,div,p,ul,li,ol,em,input, textarea, select, button,font{ margin:0; padding:0;}
 li{ list-style:none}
+input, textarea, select, button {
+    vertical-align: middle;
+}
 a:link {
     color: #3377AA;
     text-decoration: none;
@@ -37,10 +40,14 @@ a:active {
     height: 0;
     visibility: hidden;
 }
+.inline-block{ display: inline-block;}
 .mt15{ margin-top:15px;}
-.wrap{ width:1000px; margin:0 auto;}
+.wrap,#header,#content,#footer{ width:960px; margin:0 auto;}
 
-#header{ height:50px; line-height:50px; overflow:hidden; margin-bottom:20px;}
+#header{ padding-top:25px; text-align: right}
+#header .logo{ float:left;}
+#header h1.logo{ height:20px; overflow:hidden; margin-bottom:25px;}
+#header h1.logo a{ display:block; width:220px; height:20px; line-height:10em; background:url(./logo.png) no-repeat;}
 .nav{ width:300px; margin-left:100px;}
 .nav li{ float:left; margin-right:20px;}
 
@@ -195,4 +202,23 @@ a:active {
 }
 
 /*  */
-.enter{ background: #EBF8F9; padding:5px 15px;}
+.tip-renew{ font-size:13px;}
+.tip-renew em{ font-style:normal; font-size:18px; font-weight:bold; color:#F00;}
+
+.file_links label{ display:none;}
+.file_links .bt{ text-align:right; height:30px; line-height:30px; border:1px solid #eee; border-bottom:#f9f9f9; background:#f9f9f9; padding:0 15px;}
+.file_links .bt .btleft{ float:left;}
+.file_links .bt .btleft h3{ font-size:16px; padding-right:10px;}
+.file_links .bt .btleft a{ line-height:12px;}
+.file_links .box{padding:25px 0; text-align:center; border:1px solid #eee;}
+.file_links .box font{ line-height:33px; font-size:18px; padding-top:15px;}
+
+.enter{ background: #EBF8F9; padding:20px 25px;margin: 0 0 20px;}
+.input{background: #FFFFFF; border: 1px solid #94C6E1; color: #22AC38; font-weight: bold; padding: 5px; height:21px;}
+.bn-submit{ background: none repeat scroll 0 0 #3BA354; border: 0 none; border-radius: 2px 2px 2px 2px; color: #FFFFFF; cursor: pointer; font-size: 13px; height: 33px; padding: 0 24px; margin-right: 3px; vertical-align: middle;}
+.bn-submit:hover { background-color: #1C9439;}
+
+.tips{ color:#999; margin-top:25px; background:#F9F9F9; padding: 20px 25px;}
+.tips h4{ color:#007722;  font-size:14px; padding-bottom:15px; font-weight:normal;}
+.tips .example p{ margin-bottom:10px;}
+.tips .example b{ color:#333; padding-right:10px;}

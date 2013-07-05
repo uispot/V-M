@@ -6,36 +6,50 @@
 <link href="images/style.css" rel="stylesheet" rev="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="header">
-	<div class="logo"><a href="#" title="V-M.CN 网盘解析外链服务"><img src="./images/logo.png" width="220" height="20" /></a></div>
+<div id="header" class="clear">
+	<h1 class="logo"><a href="#" title="V-M.CN 网盘解析外链服务">V-M.CN 网盘解析外链服务</a></h1>
+    <a href="#"> 登陆 </a> / <a href="#"> 注册 </a>
 </div>
 <div id="content">
 	<div class="tip-renew enter">
         <p>本站已累计为 <em class="hp_user">1805</em> 位用户的 <em class="hp_file">7274</em> 个文件提供了 <em class="hp_service">1478638</em> 次外链服务。</p>
-        <p>Tips：如果您的免费额度已经使用完毕，请进群 301319243 找管理免费增加。</p>
+        <p>Tips：如果您的免费额度已经使用完毕，请进群 12345678 找管理免费增加。</p>
     </div>
 	<div class="file_links">
 		<form action="/Link/add" method="POST">
-			<div class="control-group">
-				<label for="fileurl" class="control-label">网盘文件下载页地址<a href="#">了解什么是网盘文件下载页地址</a></label>
-				<div class="controls">
-					<input type="text" name="fileurl" id="fileurl" placeholder="http://" class="input-block-level">
-					<div class="tips">
-						<p><b>百度云:</b>http://pan.baidu.com/share/link?shareid=315959&uk=137335457</p>
-						<p><b>腾讯微云Outlink版:</b>http://www.weiyun.com/web/outlink.html?1JXlOWOdCTlw5D3BfbHKpznCjZCqYNWiYjlGzbypN8UPArPsra4yXxQDOiUFlan0Xam18u5EN95gTYoQgF2FEUzXoGEviA385ed09AlLeXbuZZHfEzBP2PhFcnOioU8BiMYizTERg9/Xn/3NIcKKWniJ4gQ4eD96477go0x+tpu4C/Z+eRDyILM61ns4KkGVh3J5Ex97c7oKCkPKjNE2AedHjn8wi/hYIwYi/dNfprfPkSQE97eM+QBc2Glj+kTl4nIam3+829LLpyuALuKD1UAfaBfGpxpZ3ps0V2eQvGU=</p>
-						<p><b>腾讯微云Share版:</b>http://share.weiyun.com/e3e743c63d3d6d2024d1ec24fb09085a</p>
-						<p><b>云诺:</b>http://s.yunio.com/tg4R1h</p>
-						<p><b>威盘:</b>http://www.vdisk.cn/down/index/13581497</p>
-						<p><b>音悦台:</b>http://www.yinyuetai.com/video/82175</p>
-						<p><b>虾米音乐:</b>http://www.xiami.com/song/1771073232?spm=0.0.0.0.9k5ssQ</p>
-					</div>
+        	<label for="fileurl">网盘文件下载页地址</label>
+        	<div class="bt">
+            	<div class="btleft">
+                    <h3 class="inline-block">网盘文件下载页地址</h3>
+                    <a href="#" class="inline-block">[?]</a>
+                </div>
+                <div class="btright">
+                	<a href="#">意见建议</a> 或 加入QQ交流群 
+                </div>
+            </div>
+            
+            <div class="box">
+            	<div class="inline-block">
+                <font color="green"><b>HTTP://</b></font><input type="text" name="fileurl" size="50" id="fileurl" placeholder="黏贴网盘文件下载页地址" class="input">					
 				</div>
-			</div>
-			<div class="form-actions">
-				<button type="submit" class="bn-submit">提交</button>
+                <div class="inline-block">
+				<button type="submit" class="bn-submit">解链</button>
 				<!--button type="button" class="btn">Cancel</button-->
+                </div>
 			</div>
 		</form>
+        <div class="tips">
+        	<h4>举例参考，可以直接复制下面的地址到上面 <b><a href="#">解链</a></b> 尝试</h4>
+            <div class="example">
+            <p><b>百度云:</b>http://pan.baidu.com/share/link?shareid=315959&uk=137335457</p>
+            <p><b>腾讯微云Outlink版:</b>http://www.weiyun.com/web/outlink.html?1JX ... <!--lOWOdCTlw5D3BfbHKpznCjZCqYNWiYjlGzbypN8UPArPsra4yXxQDOiUFlan0Xam18u5EN95gTYoQgF2FEUzXoGEviA385ed09AlLeXbuZZHfEzBP2PhFcnOioU8BiMYizTERg9/Xn/3NIcKKWniJ4gQ4eD96477go0x+tpu4C/Z+eRDyILM61ns4KkGVh3J5Ex97c7oKCkPKjNE2AedHjn8wi/hYIwYi/dNfprfPkSQE97eM+QBc2Glj+kTl4nIam3+829LLpyuALu--> KD1UAfaBfGpxpZ3ps0V2eQvGU=</p>
+            <p><b>腾讯微云Share版:</b>http://share.weiyun.com/e3e743c63d3d6d2024d1ec24fb09085a</p>
+            <p><b>云诺:</b>http://s.yunio.com/tg4R1h</p>
+            <p><b>威盘:</b>http://www.vdisk.cn/down/index/13581497</p>
+            <p><b>音悦台:</b>http://www.yinyuetai.com/video/82175</p>
+            <p><b>虾米音乐:</b>http://www.xiami.com/song/1771073232?spm=0.0.0.0.9k5ssQ</p>
+            </p>
+        </div>
 	</div> 
 </div>
 <div id="footer">
