@@ -183,9 +183,11 @@ a:active {
 #footer .gray-link{ float:left;}
 
 /* 登陆注册 */
-.zhanghao{border-top:5px solid #EBF8F9; padding-top:25px;}
+.zhanghao{width:950px; margin:0 auto; border-top:5px solid #EBF8F9; padding-top:25px;}
 .zhanghao h1{ padding-bottom:25px;}
 .zhanghao .item{ margin-bottom:15px;}
+.zhanghao .main{ width:650px;}
+.zhanghao .side{ width:300px;}
 
 #content  .fleft{ float:left; width:770px;}
 #content .main{ width:650px; float:right;}
